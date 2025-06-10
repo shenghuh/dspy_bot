@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+dspy
+openai
+tiktoken
+sentence-transformers
+faiss-cpu
+numpy

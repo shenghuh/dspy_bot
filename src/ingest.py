@@ -21,7 +21,7 @@ def split_to_chunks(text: str,
     """
     Token-based splitter using tiktoken to ensure chunks fit GPT-4.1's context.
     """
-    enc = tiktoken.encoding_for_model("gpt-4o-full")
+    enc = tiktoken.encoding_for_model("gpt-4.1-2025-04-14")
     tokens = enc.encode(text)
     step   = chunk_size - overlap
     for start in range(0, len(tokens), step):
